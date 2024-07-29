@@ -2,7 +2,7 @@
   "canisters": {
       "icp_simple_site": {
           "frontend": {
-              "entrypoint": "src/index.html"
+              "entrypoint": "rc/index.html"
           },
           "source": ["src"],
           "type": "assets"
@@ -11,6 +11,9 @@
   "dfx": "0.21.0",
   "version": 1,
   "networks": {
-
+      "local": {
+          "bind": "127.0.0.1:8000",
+          "type": "ephemeral"
+      }
   }
 }
